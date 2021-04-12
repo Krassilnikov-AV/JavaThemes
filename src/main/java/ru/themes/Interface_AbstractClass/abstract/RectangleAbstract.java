@@ -7,7 +7,7 @@ package ru.themes.Interface_AbstractClass;
 /**
  * Класс RectangleAbstract
  */
-public class RectangleAbstract extends ShapeAbstract {
+public class RectangleAbstract extends ru.themes.Interface_AbstractClass.ShapeAbstract {
 	private double height;
 	private double width;
 

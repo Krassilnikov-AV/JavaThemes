@@ -7,7 +7,7 @@ package ru.themes.Interface_AbstractClass;
 /**
  * Класс CircleAbstract
  */
-public class CircleAbstract extends ShapeAbstract {
+public class CircleAbstract extends ru.themes.Interface_AbstractClass.ShapeAbstract {
 
 	private  double radius;
 	private String color;
