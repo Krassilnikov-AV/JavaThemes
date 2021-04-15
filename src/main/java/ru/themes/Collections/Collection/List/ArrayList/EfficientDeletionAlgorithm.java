@@ -2,7 +2,7 @@
  * Copyright (c) 2021 Tander, All Rights Reserved.
  */
 
-package ru.themes.Collection.List.ArrayList;
+package ru.themes.Collections.Collection.List.ArrayList;
 
 import java.io.*;
 import java.util.ArrayList;
