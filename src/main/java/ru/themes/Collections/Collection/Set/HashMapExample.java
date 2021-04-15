@@ -4,9 +4,12 @@
 
 package ru.themes.Collections.Collection.Set;
 
+import ru.themes.Collections.Map.SimpleLRUCache;
+
 import java.util.*;
 
 /**
+ * реализация интерфейса Map
  * HashMap - порядок вставки не гарантирует
  */
 public class HashMapExample {
@@ -52,8 +55,8 @@ public class HashMapExample {
 		 * корзинам все назодящиеся элементы, там получается нормальное распределение, которе
 		 * зависит от того сколько максимальных элементов можно запихнуть.
 		 *
-		 *  **т.е. если загрузили на 0,75, то она будет расширяться. можно задавать. Если задать больше 1, тоне будет
-		 *  расширяться
+		 *  **т.е. если загрузили на 0,75, то она будет расширяться. можно задавать.
+		 *  Если задать больше 1, тоне будет расширяться
 		 *  можно настраивать будет выполнение операции.
 		 *  *** если true - порядок доступа элемента (от меньшего к большему),
 		 *  т.е., полулярные эл-ты вначале, чем меньше обращений тем дальше.
@@ -71,6 +74,19 @@ public class HashMapExample {
 		linkedMap1.get(5);
 		linkedMap1.get(1);
 		System.out.println(linkedMap1);  // {4=b, 2=d, 3=c, 5=a, 1=e} ... почему???
+		/*
+		 * можно использовать как простейший LRU-контейнер
+		 * (например LRU-Cache) удалять эл-ты меньше всех вызываемыхх
+		 * демонстрация примера:
+		 * */
+
+		Map<Integer, String> simpleLRUCache = new SimpleLRUCache<>(2);  //кэш на 2
+		simpleLRUCache.put(1,"a");
+		simpleLRUCache.put(2,"b");
+		simpleLRUCache.put(3,"c");
+		simpleLRUCache.get(2);
+		simpleLRUCache.put(9,"h");
+		System.out.println(simpleLRUCache);  // {2=b, 9=h}
 
 	}
 }
