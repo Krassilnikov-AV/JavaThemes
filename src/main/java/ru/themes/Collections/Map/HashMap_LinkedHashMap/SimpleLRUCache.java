@@ -2,7 +2,7 @@
  * Copyright (c) 2021 Tander, All Rights Reserved.
  */
 
-package ru.themes.Collections.Map;
+package ru.themes.Collections.Map.HashMap_LinkedHashMap;
 
 import java.util.*;
 
