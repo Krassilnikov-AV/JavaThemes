@@ -1,2 +1,2 @@
 # JavaThemes</p>
-В данном проекте по указанному пути https://github.com/Krassilnikov-AV/JavaThemes/tree/master/src/main/java/ru/themes, распологаются мини приложения, в которых рассматриваются основные темы языка Java</p>
+В данном проекте по указанному пути https://github.com/Krassilnikov-AV/JavaThemes/tree/master/src/main/java/ru/themes, распологаются приложения, в которых рассматриваются основные темы языка Java, такие как Java Core, Java Collection API и др..</p> Описание проектов приложено ниже, которое будет добавляться по мере добавления приложений.</p> В проекте будут затронуты основные темы </p>
